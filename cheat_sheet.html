@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
+    />
+    <style>
+      body {
+        background-color: whitesmoke !important;
+        text-align: center !important;
+        margin-bottom: 20px;
+      }
+      /*  */
+
+      #justButton {
+        position: absolute;
+        top: 20px;
+        left: 30px;
+        width: 150px;
+        text-align: center;
+        border-radius: 10px;
+        border: 1px solid black;
+        background-color: #ff54ff;
+        color: #fff;
+        font-size: 16px;
+      }
+      #justButton:hover {
+        background-color: #ff99ff;
+        color: #e5e5e5;
+        box-shadow: 0px 0px 20px #ff99ff80;
+      }
+      #someDiv {
+        margin-top: 5000px;
+        margin-bottom: 10px;
+      }
+      #someDiv h1 {
+        text-align: center;
+      }
+
+      /*  */
+      .navbartheme {
+        background-color: rgba(0, 0, 0, 0.5);
+        width: auto;
+      }
+      #navbarNav a {
+        color: #ffffff;
+        margin-right: 7px;
+      }
+      .active {
+        background-color: #ffffff;
+        color: #000000 !important;
+        border-radius: 3px;
+        box-shadow: 1px 1px 10px rgba(255, 255, 255, 0.5);
+      }
+      .myClass {
+        text-align: left;
+        height: 165px;
+      }
+      .someRed {
+        color: rgb(255, 0, 0);
+        font-size: inherit;
+      }
+      .someBlue {
+        color: rgb(20, 0, 255);
+        font-size: inherit;
+      }
+      .someBrown {
+        color: rgb(167, 41, 47);
+        font-size: inherit;
+        padding: 0;
+        margin: 0;
+        text-align: left;
+      }
+      .someBlack {
+        color: black;
+        font-size: inherit;
+      }
+      .someGreen {
+        color: rgb(0, 140, 90);
+        font-size: inherit;
+      }
+      .somePurple {
+        color: rgb(197, 0, 229);
+        font-size: inherit;
+      }
+      .someLightBlue {
+        color: rgb(0, 110, 200);
+        font-size: inherit;
+      }
+      .someYellow {
+        color: rgb(130, 100, 30);
+        font-size: inherit;
+      }
+      .someDarkBlue {
+        color: rgb(1, 6, 134);
+        font-size: inherit;
+      }
+      /* -------- */
+      .hooks {
+        color: rgb(20, 0, 255);
+        font-size: inherit;
+      }
+
+      .hooks .hooks {
+        color: rgb(0, 140, 90);
+        font-size: inherit;
+      }
+
+      .hooks .hooks .hooks {
+        color: rgb(130, 100, 30);
+        font-size: inherit;
+      }
+
+      .hooks .hooks .hooks .hooks {
+        color: rgb(20, 0, 255);
+        font-size: inherit;
+      }
+
+      .hooks .hooks .hooks .hooks .hooks {
+        color: rgb(0, 140, 90);
+        font-size: inherit;
+      }
+
+      .hooks .hooks .hooks .hooks .hooks .hooks {
+        color: rgb(130, 100, 30);
+        font-size: inherit;
+      }
+      .brackets {
+        color: rgb(20, 0, 255);
+        font-size: inherit;
+      }
+      .brackets .someBlue {
+        color: rgb(180, 0, 0);
+        font-size: inherit;
+      }
+      .switcher {
+        width: 120px;
+        height: 50px;
+        position: relative;
+        display: inline-block;
+      }
+      .switcher input {
+        height: 0;
+        width: 0;
+        opacity: 0;
+      }
+      .slider {
+        height: 100%;
+        width: 100%;
+        background-color: white;
+        position: absolute;
+        top: 0;
+        right: 0;
+        border-radius: 50px;
+        transition: all 0.4s;
+        /* border: 1px solid black; */
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+      }
+      .slider::before {
+        content: "";
+        width: 42px;
+        height: 42px;
+        border-radius: 100%;
+        position: absolute;
+        top: 4px;
+        left: 4px;
+        transition: all 0.4s;
+        background-color: whitesmoke;
+        border: 1px solid rgb(193, 193, 193);
+      }
+      input:checked + .slider {
+        background-color: rgba(0, 0, 0, 0.5);
+      }
+      input:checked + .slider::before {
+        transform: translateX(70px);
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbartheme">
+      <div class="container-fluid col-lg-10" style="align-items: auto">
+        <a class="navbar-brand p-0" href="/"
+          ><img
+            class="m-auto"
+            src="FontLogo.jpg"
+            alt="logo"
+            style="height: 30px"
+        /></a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="/">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="test2.html">My way</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="cheat_sheet.html">Cheat sheet</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- end Navigation  -->
+
+    <div class="container" id="Page">
+      <h1>How to scroll to an element inside a div?</h1>
+      <label style="display: inline-flex; margin: 10px auto">
+        <h3 style="margin: auto; padding: 0 10px">Coloring</h3>
+        <label class="switcher">
+          <input onclick="trigger()" id="checker" type="checkbox" />
+          <span class="slider"></span>
+        </label>
+      </label>
+      <div class="row" style="margin-bottom: 50px">
+        <div class="col-lg-4 mx-auto">
+          <pre class="myClass">
+&lt;button id="justButton" onclick="scrollingToDiv('someDiv')"&gt;
+  Let's scrolling, dude
+&lt;/button&gt;
+&lt;div style="margin-bottom: 5000px"&gt;
+  &lt;div id="someDiv"&gt;
+    &lt;h1>Success&lt;/h1&gt;
+  &lt;/div>
+&lt;/div>
+          </pre>
+        </div>
+        <div class="col-lg-4 mx-auto">
+          <pre class="myClass">
+&lt;script&gt;
+  const scrollingToDiv = (id) => {
+    const myElement = document.getElementById(id);
+    myElement.scrollIntoView({ behavior: "smooth" });
+  };
+&lt;/script&gt;
+          </pre>
+        </div>
+        <div class="col-lg-4 mx-auto">
+          <pre class="myClass">
+#justButton {
+  position: absolute;
+  top: 20px;
+  left: 30px;
+  width: 150px;
+  text-align: center;
+  border-radius: 10px;
+  border: 1px solid black;
+  background-color: #ff54ff;
+  color: #fff;
+  font-size: 16px;
+}
+#justButton:hover {
+  background-color: #ff99ff;
+  color: #e5e5e5;
+  box-shadow: 0px 0px 20px #ff99ff80;
+}
+#someDiv {
+  margin-top: 5000px;
+  margin-bottom: 10px;
+}
+#someDiv h1 {
+  text-align: center;
+}
+          </pre>
+        </div>
+      </div>
+      <iframe
+        id="inlineFrameExample"
+        title="Inline Frame Example"
+        src="HowToScroll.html"
+        style="border: 1px solid black; background-color: white; width: 50%"
+      >
+      </iframe>
+    </div>
+
+    <!-- bs script -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+      crossorigin="anonymous"
+    ></script>
+
+    <script src="coloring.js"></script>
+  </body>
+</html>

@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ilia Palaguto</title>
+    <style>
+      @media (max-width: 576px) {
+        .arrows {
+          display: none;
+        }
+        .customCard {
+          margin-bottom: 30px;
+        }
+        .insetBorder {
+          border: 1px solid black;
+          margin-bottom: 15px;
+          text-align: center;
+          box-shadow: inset 1px 1px 5px rgba(0, 0, 0, 0.5);
+          padding: 10px;
+        }
+      }
+      @media (min-width: 576px) {
+        .infoArrows {
+          position: absolute;
+          top: 40%;
+          right: 10%;
+          left: 10%;
+        }
+      }
+      body {
+        background-color: whitesmoke !important;
+        text-align: center !important;
+      }
+      #avatar {
+        align-items: center;
+        display: flex;
+        width: 300px;
+        border-radius: 50%;
+        margin: 15px auto;
+        box-shadow: 4px 4px 16px rgba(0, 0, 0, 0.5);
+      }
+      .row {
+        text-align: center;
+      }
+      .btn-custom:hover {
+        background-color: #ffffff !important;
+        color: black !important;
+      }
+      .info p,
+      .social .btn {
+        font-size: 18px;
+        color: grey;
+        margin-bottom: 8px;
+      }
+      .navbartheme {
+        background-color: rgba(0, 0, 0, 0.5);
+        width: auto;
+      }
+      #navbarNav a {
+        color: #ffffff;
+        margin-right: 7px;
+      }
+      .active {
+        background-color: #ffffff;
+        color: #000000 !important;
+        border-radius: 3px;
+        box-shadow: 1px 1px 10px rgba(255, 255, 255, 0.5);
+      }
+      .Videos {
+        border-radius: 10px;
+        box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.5);
+      }
+      .customCard {
+        border-radius: 10px;
+        box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.5);
+        border: 1px solid black;
+        background-color: #ffffff;
+      }
+      .dropDownBorderTry {
+        background-color: red;
+      }
+    </style>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
+    />
+  </head>
+  <body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbartheme">
+      <div class="container-fluid col-lg-10" style="align-items: auto">
+        <a class="navbar-brand p-0" href="/"
+          ><img
+            class="m-auto"
+            src="FontLogo.jpg"
+            alt="logo"
+            style="height: 30px"
+        /></a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="/">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="MyWay.html">My way</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Pricing</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- end Navigation  -->
+    <div
+      class="container mx-auto mt-3"
+      style="position: relative; align-content: left"
+    >
+      <div class="row">
+        <div class="col-lg-4 customCard p-3">
+          <iframe
+            class="Videos"
+            width="100%"
+            src="https://www.youtube.com/embed/CxgOKJh4zWE"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen
+          ></iframe>
+          <p class="infoVideo">
+            I've started from
+            <a href="https://youtu.be/CxgOKJh4zWE">this</a> video
+          </p>
+        </div>
+        <div class="col-lg-4 videoArea my-auto">
+          <div style="position: relative">
+            <img
+              class="arrows"
+              src="line1.png"
+              alt="line"
+              style="width: 100%"
+            />
+            <div class="infoArrows insetBorder">
+              <p>
+                It was so intresting, but I didn't know how use this knowelege..
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 customCard p-3" style="position: relative">
+          <iframe
+            width="100%"
+            src="https://www.youtube.com/embed/W4MIiV4nZDY"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen
+          ></iframe>
+          <p class="infoVideo">
+            So, now I know where JavaScript could working. But my brain
+            genereted new questions:
+          </p>
+          <ol>
+            <li>What is Css?</li>
+            <li>JS just for WebSites?</li>
+            <li>What is React??</li>
+          </ol>
+        </div>
+      </div>
+      <div
+        style="
+          overflow: hidden;
+          border: 1px solid black;
+          height: 200px;
+          padding-top: 50px;
+          padding-left: 130px;
+        "
+      >
+        <img src="line7.png" alt="line" style="transform: rotate(-20deg)" />
+      </div>
+    </div>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+      crossorigin="anonymous"
+    ></script>
+    <img style="transform: rotateY(180deg)" src="line7.png" alt="" />
+  </body>
+</html>

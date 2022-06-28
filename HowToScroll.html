@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      #justButton {
+        position: absolute;
+        top: 20px;
+        left: 30px;
+        width: 150px;
+        text-align: center;
+        border-radius: 10px;
+        border: 1px solid black;
+        background-color: #ff54ff;
+        color: #fff;
+        font-size: 16px;
+      }
+      #justButton:hover {
+        background-color: #ff99ff;
+        color: #e5e5e5;
+        box-shadow: 0px 0px 20px #ff99ff80;
+      }
+      #someDiv {
+        margin-top: 5000px;
+        margin-bottom: 10px;
+      }
+      #someDiv h1 {
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <button id="justButton" onclick="scrollingToDiv('someDiv')">
+      Let's scrolling, dude
+    </button>
+    <div style="margin-bottom: 5000px">
+      <div id="someDiv">
+        <h1>Success</h1>
+      </div>
+    </div>
+
+    <script>
+      const scrollingToDiv = (id) => {
+        const myElement = document.getElementById(id);
+        myElement.scrollIntoView({ behavior: "smooth" });
+      };
+    </script>
+  </body>
+</html>

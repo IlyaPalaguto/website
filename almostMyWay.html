@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
+    />
+    <style>
+      body {
+        background-color: whitesmoke !important;
+        text-align: center !important;
+      }
+      .navbartheme {
+        background-color: rgba(0, 0, 0, 0.5);
+        width: auto;
+      }
+      #navbarNav a {
+        color: #ffffff;
+        margin-right: 7px;
+      }
+      .active {
+        background-color: #ffffff;
+        color: #000000 !important;
+        border-radius: 3px;
+        box-shadow: 1px 1px 10px rgba(255, 255, 255, 0.5);
+      }
+      .VideosFromYouTube {
+        width: 100%;
+        height: 350px;
+        border-radius: 10px;
+        box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
+        margin-bottom: 20px;
+      }
+      .CardForVideo {
+        height: 100%;
+        border: 1px solid black;
+        background-color: white;
+        padding: 30px;
+        border-radius: 20px;
+        box-shadow: 4px 4px 16px rgba(0, 0, 0, 0.5);
+      }
+      .arrowRight {
+        margin-bottom: -250px;
+        margin-left: -370px;
+        transform: rotateY(180deg) rotate(-30deg);
+      }
+      .arrowLeft {
+        margin-bottom: -250px;
+        margin-right: -370px;
+        transform: rotate(-30deg);
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbartheme">
+      <div class="container-fluid col-lg-10" style="align-items: auto">
+        <a class="navbar-brand p-0" href="/"
+          ><img
+            class="m-auto"
+            src="FontLogo.jpg"
+            alt="logo"
+            style="height: 30px"
+        /></a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="/">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="almostMyWay.html">My way</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Pricing</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- end Navigation  -->
+
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-6 my-3">
+          <div class="CardForVideo">
+            <iframe
+              class="VideosFromYouTube"
+              src="https://www.youtube.com/embed/CxgOKJh4zWE"
+              title="YouTube video player"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen
+            ></iframe>
+            <p>I've started from this video</p>
+          </div>
+        </div>
+        <div class="col-lg-6 my-3">
+          <div class="row" style="height: 50%"></div>
+          <div class="row" style="height: 50%">
+            <div style="overflow: hidden">
+              <img class="arrowRight" src="line7.png" alt="line" />
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-6 my-3">
+          <div class="row" style="height: 50%"></div>
+          <div class="row" style="height: 50%">
+            <div style="overflow: hidden">
+              <img class="arrowLeft" src="line7.png" alt="line" />
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-6 my-3">
+          <div class="CardForVideo">
+            <iframe
+              class="VideosFromYouTube"
+              src="https://www.youtube.com/embed/CxgOKJh4zWE"
+              title="YouTube video player"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen
+            ></iframe>
+            <p>I've started from this video</p>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-6 my-3">
+          <div class="CardForVideo">
+            <iframe
+              class="VideosFromYouTube"
+              src="https://www.youtube.com/embed/CxgOKJh4zWE"
+              title="YouTube video player"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen
+            ></iframe>
+            <p>I've started from this video</p>
+          </div>
+        </div>
+        <div class="col-lg-6 my-3">
+          <div class="row" style="height: 50%"></div>
+          <div class="row" style="height: 50%">
+            <div style="overflow: hidden">
+              <img class="arrowRight" src="line7.png" alt="line" />
+            </div>
+          </div>
+        </div>
+      </div>
+      <div style="margin-top: 100px"></div>
+      <div
+        class="col-lg-6 mx-auto"
+        style="
+          border: 1px solid black;
+          height: 200px;
+          /* border-radius: 5px 5px 5px 100px; */
+        "
+      ></div>
+      <div style="margin-top: 200px"></div>
+    </div>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
